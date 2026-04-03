@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+
+<html lang="ES" translate="yes">
+
+<head>
+
+
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📞 <a href="tel:+61431132087">+61 431 132 087</a></span>
+                    <span>✉️ <a href="mailto:melissacake15@gmail.com">melissacake15@gmail.com</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo_melissa.png" alt="Logo Melissa Cakes" class="logo-img">
+                <div class="logo">MELISSA CAKE</div>
+            </div>
+
+            <!-- Botón del menú hamburguesa-->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+
+            <!-- Menú principal -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home">home</a></li>
+
+                    <!-- Menú desplegable de Productos -->
+                    <li class="dropdown">
+                        <a href="#products" class="dropdown-btn">products <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#baby-carousel">Baby Showers</a></li>
+                            <li><a href="#kids-carousel">Children's</a></li>
+                            <li><a href="#travel-carousel">Travel</a></li>
+                            <li><a href="#birthday-carousel">Birthday</a></li>
+                            <li><a href="#vintage-carousel">Vintage</a></li>
+                            <li><a href="#wedding-carousel">Wedding</a></li>
+                            <li><a href="#sports-carousel">Sports</a></li>
+                            <li><a href="#quick-cakes-carousel">Quick Cakes</a></li>
+                            <li><a href="#cupcakes-carousel">Cupcakes</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#custom-cakes">custom cakes</a></li>
+                </ul>
+            </nav>
+
+            <button class="cart-btn" onclick="openCartModal()">🛒 Cart (0)</button>
+            <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()"
+                title="Toggle Dark/Light Mode">🌙</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-carousel"></div>
+        <div class="hero-content">
+            <h1>Artisanal Delights</h1>
+            <p>We create sweet moments with love and dedication.</p>
+            <button class="cta-btn" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                Explore Products
+            </button>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>><br><br><br>
+            <div class="product-description" style="text-align: center; font-size: 1.4em;">
+                If you don't have designs in mind, we have these designs for you. One for every occasion.
+            </div>
+            <br><br><br>
+
+
+            <!-- Baby Showers Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">👶 Baby Shower &
+                    Baptisms</h3>
+                <div class="carousel" id="baby-carousel">
+                    <div class="product-card" onclick="openProductModal('Classic Baby Shower Cake')">
+                        <div class="product-image" style="background-image: url('images/oso azul.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name">Classic Baby Shower Cake</div><br>
+                            <div class="product-description">Our baby shower cakes are designed with love and creativity
+                                to celebrate the arrival of the new family member. Each creation is unique, with
+                                personalized details that reflect the sweetness and joy of this special moment.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card" onclick="openProductModal('First Communion cake')">
+                        <div class="product-image" style="background-image: url('images/cruz.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">First Communion cake</div><br>
+                            <div class="product-description">Our first communion cakes are created with elegance and
+                                meaning, perfect for celebrating this very special moment. Each design is crafted to
+                                reflect the solemnity and joy of the occasion.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Baby Shower Cake')">
+                        <div class="product-image" style="background-image: url('images/animales.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Baby Shower Cake (Animal Theme)</div><br>
+                            <div class="product-description">A playful and colorful cake decorated with adorable fondant
+                                animals, such as teddy bears, elephants, or bunnies. Perfect for a woodland or
+                                safari-themed party.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('First Communion cake')">
+                        <div class="product-image" style="background-image: url('images/oso blanco.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Animated First Communion cake</div><br>
+                            <div class="product-description">Each first communion cake is designed with dedication and
+                                detail to commemorate this very special event in the lives of children. With elegant and
+                                symbolic decorations, our cakes capture the essence of the celebration, incorporating
+                                delicate touches in soft colors.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card" onclick="openProductModal('Modern Baby Shower Cake')">
+                        <div class="product-image" style="background-image: url('images/arcoiris.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Modern Baby Shower Cake</div>
+                            <div class="product-description">A contemporary design with geometric elements, pastel
+                                colors, and minimalist details. Perfect for a modern and sophisticated celebration.
+                            </div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Vintage Baby Shower Cake')">
+                        <div class="product-image" style="background-image: url('images/anthony.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Vintage Baby Shower Cake</div>
+                            <div class="product-description">Inspired by timeless elegance, with delicate florals, soft
+                                tones, and antique gold accents. Ideal for a retro or classic-themed party.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Rainbow Baby Shower Cake')">
+                        <div class="product-image" style="background-image: url('images/oso rosa.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Rainbow Baby Shower Cake</div>
+                            <div class="product-description">A Cake rainbow crowns this cake, accompanied by clouds and
+                                stars. It represents the magic and hope that a new baby brings.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Más productos baby shower... -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('baby-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('baby-carousel', 1)">›</button>
+            </div>
+
+
+            <!-- Infantiles Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">🧸 Children's</h3>
+                <div class="carousel" id="kids-carousel">
+                    <div class="product-card" onclick="openProductModal('Animals Cake')">
+                        <div class="product-image" style="background-image: url('images/arcoiris 1.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Animals Cake</div>
+                            <div class="product-description">Pure joy in every slice! A cake full of colors, playful
+                                shapes, and creative decorations that will make any boy or girl smile.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/frozen.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Princess cake</div>
+                            <div class="product-description">A cake full of magic! Colorful cutouts, surprise fillings,
+                                or even a candy piñata in the center. Fun is guaranteed when you cut the cake.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/frozen 2.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Elsa Cake</div>
+                            <div class="product-description">A cake worthy of a fairy tale! This delicious cake is
+                                inspired by the magical world of princesses, with elegant details and a touch of
+                                fantasy.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/sirena.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Mermaid Cake</div>
+                            <div class="product-description">Immerse yourself in the magic of the sea with this
+                                enchanting mermaid-inspired cake. Perfect for an underwater party, birthday, or
+                                celebrating your favorite little mermaid's dreams.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/unicornio.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Unicorns Cake</div>
+                            <div class="product-description">A dreamy cake for unicorn lovers, full of pastel colors,
+                                sparkles, and lots of whimsy. Perfect for making any celebration magical!</div>
+                            <div class="product-price">From: $100- $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/peaches.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Peaches Cake</div>
+                            <div class="product-description">A cake worthy of the queen of Mario Bros! Inspired by the
+                                elegant and sweet Princess Peach, this cake combines iconic colors and whimsical details
+                                for a sweet "game over" celebration.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/violet.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Doll Cake</div>
+                            <div class="product-description">A cake as charming as your little one's favorite dolls,
+                                ideal for birthdays, tea parties, or any celebration filled with magic and fantasy.
+                            </div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/pulpo.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Octopus Cake</div>
+                            <div class="product-description">A fun and colorful underwater feast! This cake takes little
+                                ones on an oceanic adventure starring adorable sea creatures, especially our octopus
+                                friend.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/frutas.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Tropical Fruits</div>
+                            <div class="product-description">An explosion of sunny flavors and vibrant colors! This cake
+                                takes little ones (and not-so-little ones) on a journey to a paradise island, where the
+                                sweetness of tropical fruits takes center stage.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/bumblebee.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Transformers Cake</div>
+                            <div class="product-description">A cake that transforms into fun! Inspired by the most
+                                famous robotic heroes, this cake is perfect for little fans of Optimus Prime, Bumblebee,
+                                and the Autobots (or even the Decepticons).</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/transformers.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Optimus Prime Cake</div>
+                            <div class="product-description">For little heroes who dream of saving the universe. An epic
+                                cake inspired by the noble Optimus Prime, leader of the Autobots, perfect for
+                                action-packed birthdays and robotic adventures.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/harry potter.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Hermione Cake</div>
+                            <div class="product-description">For brilliant minds and brave hearts. A cake inspired by
+                                Hermione Granger, the smartest witch at Hogwarts, filled with books, wands, and magical
+                                touches.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/moana.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Moana Cake</div>
+                            <div class="product-description">For little adventurers who dream of sailing beyond the
+                                reef. Inspired by the brave Moana of Motunui, this cake combines the vibrant colors of
+                                the Pacific, the magic of the ocean, and the protagonist's free spirit.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/pau patrol.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Paw Patrol Cake</div>
+                            <div class="product-description">Paw Patrol to the rescue! This cake is inspired by the
+                                bravest pups of PAW Patrol, perfect for birthdays filled with action, adventure, and
+                                lots of fun.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/chef.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Chef Cake</div>
+                            <div class="product-description">A cake for little cooking lovers! Inspired by the culinary
+                                world, this design is ideal for future chefs or children who love helping out in the
+                                kitchen.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/spider man.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Spider Man Cake</div>
+                            <div class="product-description">A climbing cake for fun! Inspired by the friendly
+                                neighborhood Spiderman, it's perfect for little Marvel fans and action-packed
+                                adventures.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Princess Cake')">
+                        <div class="product-image" style="background-image: url('images/mia.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Butterfly Cake</div>
+                            <div class="product-description">A cake that looks like it came from an enchanted garden,
+                                perfect for girls and boys who love nature, bright colors, and the delicacy of
+                                butterflies.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Animated Dog Cake')">
+                        <div class="product-image" style="background-image: url('images/alana.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Animated Dog Cake</div>
+                            <div class="product-description">Inspired by the most famous cartoon dogs, ideal for little
+                                fans of Paw Patrol, Bluey, Scooby-Doo, or Lady and the Tramp.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Animated Dog Cake')">
+                        <div class="product-image" style="background-image: url('images/moana 2.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Charm Cake</div>
+                            <div class="product-description">A cake as magical as the Madrigal house, full of colors,
+                                flowers and details from the Disney movie.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Más productos infantiles... -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('kids-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('kids-carousel', 1)">›</button>
+            </div>
+
+            <!-- Travel Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">✈️ Travel</h3>
+                <div class="carousel" id="travel-carousel">
+                    <div class="product-card" onclick="openProductModal('Travel Cake')">
+                        <div class="product-image" style="background-image: url('images/maletas.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">custom air plane cake</div>
+                            <div class="product-description">A cake inspired by the adventure of flying, featuring
+                                airplanes, clouds, and dream destinations. Perfect for celebrating trips, bachelorette
+                                parties, or simply for those who love exploring the world.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('travel cake')">
+                        <div class="product-image" style="background-image: url('images/aviacion.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">travel cup cakes</div>
+                            <div class="product-description">A design filled with travel elements: suitcases, passports,
+                                maps, and symbols of the most iconic places. Perfect for celebrating a departure, a
+                                return, or the nomadic spirit.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('travel cake')">
+                        <div class="product-image" style="background-image: url('images/avion.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Travel Cake</div>
+                            <div class="product-description">An edible work of art that captures the essence of travel,
+                                with details like compasses, plane tickets, and iconic landscapes. Celebrate the
+                                excitement of discovering new horizons.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('travel cake')">
+                        <div class="product-image" style="background-image: url('images/42 th.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">42nd Street</div>
+                            <div class="product-description">Inspired by the vibrant energy of big city streets,
+                                this cake includes urban elements like skyscrapers, taxis, and traffic signs.
+                                Perfect for lovers of urban life and metropolitan travel.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Más productos travel... -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('travel-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('travel-carousel', 1)">›</button>
+            </div>
+
+            <!-- Birthday Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">🎉 birthday</h3>
+                <div class="carousel" id="birthday-carousel">
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/azul.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Classic Birthday Cake</div>
+                            <div class="product-description">An elegant and versatile cake, perfect for any celebration.
+                                Decorated with subtle details like clean lines, classic colors, and a touch of shine,
+                                ideal for those who prefer sophisticated style.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/blanco con rosas.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Golden Birthday Cake</div>
+                            <div class="product-description">A glamorous design with golden details, ideal for elegant
+                                parties or special birthdays. The combination of white and gold gives it a touch of
+                                luxury and celebration.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/negra.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Black & Gold Birthday Cake</div>
+                            <div class="product-description">Modern and bold, this cake combines matte black with gold
+                                details for a sophisticated and contemporary look. Perfect for those who love
+                                avant-garde style.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/birthay rosa.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Pink Celebration Cake</div>
+                            <div class="product-description">A cake full of joy, decorated with pink tones and floral or
+                                geometric details. Ideal for fresh and feminine parties.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/sakshi.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Floral Birthday Cake</div>
+                            <div class="product-description">Decorated with sugar flowers in vibrant or pastel colors,
+                                this cake is perfect for celebrating with a natural and romantic touch.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/azul dorado.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Minimalist Birthday Cake</div>
+                            <div class="product-description">Clean and modern design, with subtle details like fine
+                                lines or fondant text. Ideal for those who prefer simple elegance.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Birthday Cake')">
+                        <div class="product-image" style="background-image: url('images/negro dorado.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Funfetti Birthday Cake</div>
+                            <div class="product-description">Pure fun! A cake full of colorful sprinkles inside and
+                                cheerful decoration outside. Perfect for lively and energetic parties.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Más productos birthday... -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('birthday-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('birthday-carousel', 1)">›</button>
+            </div>
+
+            <!-- Vintage Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">🕰️ Vintage</h3>
+                <div class="carousel" id="vintage-carousel">
+                    <div class="product-card" onclick="openProductModal('Vintage Floral Cake')">
+                        <div class="product-image" style="background-image: url('images/amarilla.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Vintage Floral Cake</div>
+                            <div class="product-description">A cake inspired by the delicacy of past eras, decorated
+                                with sugar flowers in pastel tones and edible lace details. Perfect for weddings,
+                                anniversaries, or events with a romantic and classic touch.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Vintage Floral Cake')">
+                        <div class="product-image" style="background-image: url('images/virgo baby.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Elegant Virgo Baby</div>
+                            <div class="product-description">"Semi-naked" style with visible layers and textured
+                                buttercream, adorned with golden details and dried flowers. Combines rusticity with
+                                vintage elegance, ideal for outdoor celebrations or country weddings.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Vintage Floral Cake')">
+                        <div class="product-image" style="background-image: url('images/one degree.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name"> Lavender Retro Cake</div>
+                            <div class="product-description">Lavender sponge cake with cream cheese frosting and purple
+                                fondant petal decoration. A classic reinvented with vibrant yet sophisticated colors.
+                            </div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/morado.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Cupcakes</div>
+                            <div class="product-description">Variety of flavors with creamy frosting</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/hello 30.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Cupcakes</div>
+                            <div class="product-description">Variety of flavors with creamy frosting</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/rip.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Cupcakes</div>
+                            <div class="product-description">Variety of flavors with creamy frosting</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Classic Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/rip 20.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Cupcakes</div>
+                            <div class="product-description">Variety of flavors with creamy frosting</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Más productos vintage... -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('vintage-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('vintage-carousel', 1)">›</button>
+            </div>
+
+            <!-- Wedding Cakes Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">💍 Wedding Cakes
+                </h3>
+                <div class="carousel" id="wedding-carousel">
+                    <div class="product-card" onclick="openProductModal('Classic Wedding Cake')">
+                        <div class="product-image" style="background-image: url('images/rosas blancas.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Wedding Cake</div>
+                            <div class="product-description">"Timeless elegance in every layer. This impeccable white
+                                cake features delicate sugar flowers and fondant details that look like lace. Perfect
+                                for traditional weddings where every detail tells a story of eternal love."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Dandelion Wishes')">
+                        <div class="product-image" style="background-image: url('images/diente leon.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">"Dandelion Wishes"</div>
+                            <div class="product-description">"Magic and romance in every slice. This design features
+                                delicate sugar dandelions that seem to fly towards the sky, symbolizing the wishes of
+                                the new life together. Perfect for outdoor or nature-themed weddings."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Golden Embrace')">
+                        <div class="product-image" style="background-image: url('images/corazon blanco.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Golden Embrace</div>
+                            <div class="product-description">"Modern luxury in cake form. A combination of pure white
+                                with geometric gold details that capture the light. Ideal for couples looking for
+                                sophistication with a contemporary touch."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Modern Lace')">
+                        <div class="product-image" style="background-image: url('images/blanco\ con\ rosas.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Modern Lace</div>
+                            <div class="product-description">"Delicate art in every inch. Precise fondant lace and
+                                geometric details that combine tradition with modernity. For brides who love artisanal
+                                details."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Simple Wedding Cake with Sunflowers')">
+                        <div class="product-image" style="background-image: url('images/girasoles.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Simple Wedding Cake with Sunflowers</div>
+                            <div class="product-description">"Nature in motion. Sugar flowers in pastel tones that seem
+                                to fall gently down the tiers of the cake. Ideal for spring or garden weddings."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Three-Tier Cake')">
+                        <div class="product-image" style="background-image: url('images/a\ yc.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Three-Tier Cake</div>
+                            <div class="product-description">Classic and elegant, perfect for medium-sized weddings with
+                                simple yet sophisticated decoration.</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Agrega más productos de bodas aquí -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('wedding-carousel',-1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('wedding-carousel', 1)">›</button>
+            </div>
+
+            <!-- Deportivas Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">⚽ Sports</h3>
+                <div class="carousel" id="sports-carousel">
+                    <div class="product-card" onclick="openProductModal('Barcelona Cake')">
+                        <div class="product-image" style="background-image: url('images/deportiva\ 1.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Barcelona Cake</div>
+                            <div class="product-description">"Goal of flavor! A cake that pays homage to the Blaugrana
+                                colors, with details of the FC Barcelona crest and a soccer field design. Perfect for
+                                Culés fans who want to celebrate in style."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Soccer Cake')">
+                        <div class="product-image" style="background-image: url('images/deportiva\ 2.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Soccer Cake</div>
+                            <div class="product-description">"The king of sports in sweet version! A cake shaped like a
+                                soccer ball or playing field, decorated with realistic details. Ideal to celebrate
+                                victories or birthdays of soccer lovers."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Bike Cake')">
+                        <div class="product-image" style="background-image: url('images/deportiva\ 3.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Bike Cake</div>
+                            <div class="product-description">"Pedal towards fun. A cycling-inspired cake, with wheel
+                                details, bicycles, and a design full of movement. Perfect for celebrating races,
+                                triumphs, or simply the love for this sport."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <!-- Agrega más productos deportivos aquí -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('sports-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('sports-carousel', 1)">›</button>
+            </div>
+
+            <!-- Tortas Rápidas Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">⚡ fasted cakes
+                </h3>
+                <div class="carousel" id="quick-cakes-carousel">
+                    <div class="product-card" onclick="openProductModal('Strawberry Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 1.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Strawberry Fast Cake</div>
+                            <div class="product-description">"Instant sweetness with fresh strawberries. A fluffy
+                                vanilla cake, covered with whipped cream and juicy strawberry slices. Perfect to satisfy
+                                cravings or celebrate spontaneous moments with a fresh and natural touch."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Decorated Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 2.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Decorated Fast Cake</div>
+                            <div class="product-description">"Quick and simple elegance. A classic cake decorated with
+                                seasonal fruits, shaved chocolate, and a touch of shiny glaze. Ideal to surprise without
+                                complications on any occasion."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Birthday Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 3.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Birthday Fast Cake</div>
+                            <div class="product-description">"Celebrate in the blink of an eye! A colorful cake with
+                                colorful sprinkles, creamy frosting, and a personalized message. Perfect for last-minute
+                                birthdays that can't wait."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('White Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 4.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">White Fast Cake</div>
+                            <div class="product-description">"Simplicity with style. An impeccable white cake, decorated
+                                with minimalist fondant details and a touch of edible glitter. Elegant, fast, and
+                                perfect for any event."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Animated Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 5.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Animated Fast Cake</div>
+                            <div class="product-description">"Instant fun for the little ones. A cake decorated with
+                                animated characters, vibrant colors, and playful details. Ideal to brighten up an
+                                afternoon or a surprise party!"</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Simple Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 6.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Simple Fast Cake</div>
+                            <div class="product-description">"The essential made special. A soft and delicious cake,
+                                with smooth icing and simple but charming decoration. For when time presses but flavor
+                                can't wait."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Fast Cake')">
+                        <div class="product-image" style="background-image: url('images/rapida\ 7.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Fast Cake</div>
+                            <div class="product-description">"The sweet solution for emergencies. A versatile cake with
+                                fluffy layers, cream filling, and a smooth finish. The perfect lifesaver for any
+                                unexpected occasion."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- Agrega más productos de tortas rápidas aquí -->
+                </div>
+                <button class="carousel-nav prev" onclick="scrollCarousel('quick-cakes-carousel', -1)">‹</button>
+                <button class="carousel-nav next" onclick="scrollCarousel('quick-cakes-carousel', 1)">›</button>
+            </div>
+
+            <!-- Cupcakes Carousel -->
+            <div class="carousel-container">
+                <br>
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #2d3436; text-align: center;">🧁 Cupcakes</h3>
+                <div class="carousel" id="cupcakes-carousel">
+                    <div class="product-card" onclick="openProductModal('Classic Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/cup cakes.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Classic Cupcakes</div>
+                            <div class="product-description">"Fun in miniature. Customized according to your event
+                                theme: superheroes, princesses, sports, etc. Each cupcake is a small work of art with
+                                creative toppings and vibrant colors."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Unicorn Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/unicornio cup.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Unicorn Cupcakes</div>
+                            <div class="product-description">"Magic and color in every bite. Vanilla or chocolate
+                                cupcakes decorated with pastel buttercream, edible glitter, and unicorn horn details. A
+                                magical feast for fantasy creature lovers!"</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Harry Potter Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/cakes harry.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Harry Potter Cupcakes</div>
+                            <div class="product-description">"A touch of Hogwarts magic. Inspired by Hogwarts houses,
+                                these cupcakes feature themed decorations: Gryffindor (red/gold), Slytherin
+                                (green/silver), etc. With details like lightning bolts, wands, or the Sorting Hat. Ideal
+                                for fans of the wizarding world!"</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('Love Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/te amamos.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Love Cupcakes</div>
+                            <div class="product-description">"Sweetness that expresses love. Cupcakes decorated with
+                                fondant hearts, romantic messages, or rose-shaped buttercream. Perfect for
+                                anniversaries, Valentine's Day, or simply to say 'I love you'."</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" onclick="openProductModal('London Cupcakes')">
+                        <div class="product-image" style="background-image: url('images/love london.jpg');">
+                            <div class="product-overlay">
+                                <div class="overlay-text">View Options</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">London Cupcakes</div>
+                            <div class="product-description">"A sweet trip to England. Designed with British motifs: UK
+                                flags, symbols like Big Ben or red buses. Classic flavors like vanilla with fruit jam or
+                                infused Earl Grey tea. For Anglophiles!"</div>
+                            <div class="product-price">From: $100 - $400</div>
+                        </div>
+
+                        <!-- Más productos cupcakes... -->
+                    </div>
+                    <button class="carousel-nav prev" onclick="scrollCarousel('cupcakes-carousel', -1)">‹</button>
+                    <button class="carousel-nav next" onclick="scrollCarousel('cupcakes-carousel', 1)">›</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">×</span>
+                <h2 class="modal-title" id="modalTitle">Product</h2>
+                <p id="priceRange" class="product-price" style="margin-top: 10px; font-size: 1.2rem;"></p>
+                <p>Customize your order according to your preferences</p>
+            </div>
+
+            <div class="option-group">
+                <h3>🎯 Size</h3>
+                <div class="option-buttons" id="sizeOptions">
+                    <button class="option-btn" onclick="selectOption(this, 'size')">8-10 people</button>
+                    <button class="option-btn" onclick="selectOption(this, 'size')">12-15 people</button>
+                    <button class="option-btn active" onclick="selectOption(this, 'size')">20-25 people</button>
+                    <button class="option-btn" onclick="selectOption(this, 'size')">30-35 people</button>
+                    <button class="option-btn" onclick="selectOption(this, 'size')">40-45 people</button>
+                    <button class="option-btn" onclick="selectOption(this, 'size')">50-60 people</button>
+                    <button class="option-btn" onclick="selectOption(this, 'size')">70-80 people</button>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <h3>🍰 Flavors</h3>
+
+                <!-- Submenú para bizcocho -->
+                <div class="sub-option">
+                    <h4>Base</h4>
+                    <div class="option-buttons">
+                        <button class="option-btn active"
+                            onclick="selectSubOption(this, 'bizcocho', 'Vanilla')">Vanilla</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'bizcocho', 'Chocolate')">Chocolate</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'bizcocho', 'Red Velvet')">Red
+                            Velvet</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'bizcocho', 'Carrot')">Carrot</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'bizcocho', 'Orange')">Orange</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'bizcocho', 'Lemon')">Lemon</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'bizcocho', 'Tiramisu')">Tiramisu</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'bizcocho', 'Cookies and Cream')">Cookies and Cream</button>
+
+                    </div>
+                </div>
+
+                <!-- Submenú para relleno -->
+                <div class="sub-option">
+                    <h4>Filling</h4>
+                    <div class="option-buttons">
+                        <button class="option-btn active"
+                            onclick="selectSubOption(this, 'relleno', 'Dark Chocolate Cream')">Dark Chocolate
+                            Cream</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'relleno', 'Red Fruits')">Red
+                            Fruits</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'relleno', 'Strawberry Cream')">Strawberry Cream</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'relleno', 'Lemon Curd')">Lemon
+                            Curd</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'relleno', 'Cream Cheese Frosting')">Cream Cheese
+                            Frosting</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'relleno', 'Passion Fruit Cream')">Passion Fruit
+                            Cream</button>
+                        <button class="option-btn" onclick="selectSubOption(this, 'relleno', 'Dulce de Leche')">Dulce de
+                            Leche</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'relleno', 'Cookies and Cream')">Cookies and Cream</button>
+                    </div>
+                </div>
+
+                <!-- Submenú para cobertura -->
+                <div class="sub-option">
+                    <h4>Frosting</h4>
+                    <div class="option-buttons">
+                        <button class="option-btn active"
+                            onclick="selectSubOption(this, 'cobertura', 'Buttercream')">Buttercream</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'cobertura', 'Fondant')">Fondant</button>
+                        <button class="option-btn"
+                            onclick="selectSubOption(this, 'cobertura', 'Chocolate Ganache')">Chocolate Ganache</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <h3>📝 Custom Message</h3>
+                <input placeholder="Write your message here..."
+                    style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;"
+                    type="text" />
+            </div>
+            <div class="option-group">
+                <h3>📅 Delivery Date</h3>
+                <input
+                    style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;"
+                    type="date" />
+            </div><br>
+
+            <div style="margin-top: 1rem;">
+                <h3>😎 Client Info</h3>
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" placeholder="Your name" required
+                    style="width:100%; padding:1rem; margin-bottom:1rem;">
+                <label for="customerPhone">Phone:</label>
+                <input type="tel" id="customerPhone" placeholder="Your phone" required
+                    style="width:100%; padding:1rem;">
+            </div><br><br>
+
+            <div class="option-group">
+                <h3>🚚 Delivery Option</h3>
+                <div class="option-buttons" id="deliveryOptions">
+                    <button class="option-btn active" onclick="selectDeliveryOption(this, 'pickup')">
+                        <span style="font-size: 1.2em;">🏪</span> Pick Up in Store
+                    </button>
+                    <button class="option-btn" onclick="selectDeliveryOption(this, 'delivery')">
+                        <span style="font-size: 1.2em;">🚚</span> Home Delivery <span
+                            style="color: #ff6b9d;">(+$20)</span>
+                    </button>
+                </div>
+                <div id="deliveryInfo" style="display: none; margin-top: 1rem;">
+                    <input type="text" id="deliveryAddress" placeholder="Full Address"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem; margin-bottom: 1rem;">
+                    <input type="tel" id="deliveryPhone" placeholder="Contact Phone"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                </div>
+                <div id="deliveryFeeMessage"
+                    style="background: #fff5f7; border-left: 4px solid #ff6b9d; padding: 0.8rem; margin-top: 0.8rem; border-radius: 0 8px 8px 0; display: none;">
+                    <p style="color: #ff6b9d; margin: 0; font-size: 0.9rem;">
+                        <span style="font-weight: bold;">⚠ Note:</span> An additional $20 fee will apply for home
+                        delivery.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Cantidad -->
+            <div class="quantity-selector">
+                <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
+                <span class="quantity-display" id="quantity">1</span>
+                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+            </div>
+
+            <!-- BOTÓN AGREGAR AL CARRITO -->
+            <button class="add-to-cart" onclick="addToCart()">🛒 Add to Cart - $100</button>
+
+
+        </div>
+    </div>
+    <!-- Sección de Pasteles Personalizados -->
+    <section id="custom-cakes" class="custom-cakes-section"
+        style="padding: 5rem 0; background: linear-gradient(to bottom, #f8f9fa, #ffffff);">
+        <br>
+        <h2 class="section-title">🎨 Custom Cakes</h2>
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">🎉 Birthday</h3>
+                <button onclick="openCustomCakeModal('birthday')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">💍 Wedding </h3>
+                <button onclick="openCustomCakeModal('wedding')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">🚴‍♂️ Sports</h3>
+                <button onclick="openCustomCakeModal('sport')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">👼 Children</h3>
+                <button onclick="openCustomCakeModal('children')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">✈ Travel</h3>
+                <button onclick="openCustomCakeModal('travel')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">🧁 Cupcakes</h3>
+                <button onclick="openCustomCakeModal('cupcakes')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">👶 Baby Showers & Baptisms</h3>
+                <button onclick="openCustomCakeModal('baby-shower')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+            <div
+                style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 1.8rem; color: #2d3436; margin-bottom: 1rem;">🎓 Graduation</h3>
+                <button onclick="openCustomCakeModal('graduation')"
+                    style="background: linear-gradient(135deg, #ff6b9d, #ff8e8e); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 25px; cursor: pointer; transition: all 0.3s ease;">Customize
+                    Now</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal para Pasteles Personalizados CORREGIDO -->
+    <div class="modal" id="customCakeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">×</span>
+                <h2 class="modal-title" id="customCakeTitle">Custom Cake</h2>
+                <p>Tell us about your dream cake</p>
+            </div>
+            <div class="modal-body">
+                <!-- Opciones de tamaño -->
+                <div class="option-group">
+                    <h3>🎯 Size</h3>
+                    <div class="option-buttons" id="customSizeOptions">
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">Small (8-10)</button>
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">Medium (12-15)</button>
+                        <button class="option-btn active" onclick="selectCustomOption(this, 'size')">Large
+                            (20-25)</button>
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">X-Large (30-35)</button>
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">XX-Large (40-45)</button>
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">XXX-Large (50-60)</button>
+                        <button class="option-btn" onclick="selectCustomOption(this, 'size')">Max (70)</button>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <input type="number" id="customSizeInput" placeholder="Custom size (number of people)"
+                            style="width: 100%; padding: 0.8rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                    </div>
+                </div>
+
+                <!-- Opciones de sabores -->
+                <div class="option-group">
+                    <h3>🍰 Flavor Options</h3>
+
+                    <!-- Bizcocho -->
+                    <div class="sub-option">
+                        <h4>Cake Base</h4>
+                        <h5 style="color: #ff6b9d; font-size: 0.9rem;">(if you choose tiramisu do not choose any
+                            filling, tiramisu does not have a filling)</h5>
+                        <div class="option-buttons">
+                            <button class="option-btn active"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Vanilla')">Vanilla</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Chocolate')">Chocolate</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Red Velvet')">Red Velvet</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Carrot')">Carrot</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Orange')">Orange</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Lemon')">Lemon</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Cookies and Cream')">Cookies and
+                                Cream</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'bizcocho', 'Tiramisu')">Tiramisu</button>
+                        </div>
+                    </div>
+
+                    <!-- Relleno -->
+                    <div class="sub-option">
+                        <h4>Filling</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn active"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Dark Chocolate Cream')">Dark Chocolate
+                                Cream</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Red Fruits')">Red Fruits</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Strawberry Cream')">Strawberry
+                                Cream</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Lemon Curd')">Lemon Curd</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Cream Cheese Frosting')">Cream Cheese
+                                Frosting</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Passion Fruit Cream')">Passion Fruit
+                                Cream</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Dulce de Leche')">Dulce de
+                                Leche</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'relleno', 'Cookies and Cream')">Cookies and
+                                Cream</button>
+                        </div>
+                    </div>
+
+                    <!-- Cobertura -->
+                    <div class="sub-option">
+                        <h4>Frosting</h4>
+                        <div class="option-buttons">
+                            <button class="option-btn active"
+                                onclick="selectCustomSubOption(this, 'cobertura', 'Buttercream')">Buttercream</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'cobertura', 'Fondant')">Fondant</button>
+                            <button class="option-btn"
+                                onclick="selectCustomSubOption(this, 'cobertura', 'Chocolate Ganache')">Chocolate
+                                Ganache</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mensaje personalizado -->
+                <div class="option-group">
+                    <h3>📝 Custom Message</h3>
+                    <input type="text" id="customCakeMessage" placeholder="Write your custom message here..."
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                </div>
+
+                <!-- Opción de entrega -->
+                <div class="option-group">
+                    <h3>🚚 Delivery Option</h3>
+                    <div class="option-buttons" id="customDeliveryOptions">
+                        <button class="option-btn active" onclick="selectCustomDeliveryOption(this, 'pickup')">
+                            <span style="font-size: 1.2em;">🏪</span> Pick Up in Store
+                        </button>
+                        <button class="option-btn" onclick="selectCustomDeliveryOption(this, 'delivery')">
+                            <span style="font-size: 1.2em;">🚚</span> Home Delivery <span
+                                style="color: #ff6b9d;">(+$20)</span>
+                        </button>
+                    </div>
+                    <div id="customDeliveryInfo" style="display: none; margin-top: 1rem;">
+                        <input type="text" id="customDeliveryAddress" placeholder="Full Address"
+                            style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem; margin-bottom: 1rem;">
+                        <input type="tel" id="customDeliveryPhone" placeholder="Contact Phone"
+                            style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                    </div>
+                </div>
+
+                <!-- Descripción -->
+                <div class="option-group">
+                    <h3>📝 Description</h3>
+                    <h5 style="color: #ff6b9d; font-size: 0.9rem;">(describe your cake in detail, do not miss any
+                        details)</h5>
+                    <textarea id="customCakeDescription"
+                        placeholder="Describe your cake in detail (theme, colors, special requests)"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem; min-height: 100px;"></textarea>
+                </div>
+
+                <!-- Imagen de referencia -->
+                <div class="option-group">
+                    <h3>🖼️ Reference Image</h3>
+                    <input type="file" id="customReferenceImage" accept="image/*"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                    <div id="customImagePreview" style="margin-top: 1rem; display: none;">
+                        <img id="customPreviewImage" src="#" alt="Preview"
+                            style="max-width: 100%; max-height: 200px; border-radius: 10px; display: block; margin: 0 auto;">
+                    </div>
+                </div>
+
+                <!-- Fecha de entrega -->
+                <div class="option-group">
+                    <h3>📅 Delivery Date</h3>
+                    <input type="date" id="customCakeDeliveryDate"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="option-group">
+                    <h3>📞 Contact Info</h3>
+                    <input type="text" id="customCustomerName" placeholder="Your Name"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem; margin-bottom: 1rem;">
+                    <input type="tel" id="customCustomerPhone" placeholder="Phone Number"
+                        style="width: 100%; padding: 1rem; border: 2px solid #e9ecef; border-radius: 10px; font-size: 1rem;">
+                </div>
+
+                <!-- Precio y botón -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                    <h3 style="color: #2d3436;">Estimated Price:</h3>
+                    <h3 id="customCakePrice" style="color: #ff6b9d;">$200</h3>
+                </div>
+
+                <button class="add-to-cart" onclick="addCustomCakeToCart()">
+                    🛒 Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">×</span>
+                <h2 class="modal-title">🛒 Your Shopping Cart</h2>
+                <p>Review and confirm your products before paying</p>
+            </div>
+            <div class="modal-body">
+                <div id="cartContent" style="max-height: 400px; overflow-y: auto; margin-bottom: 2rem;"></div>
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 10px; margin-bottom: 2rem;">
+                    <h3 style="color: #2d3436;">Total:</h3>
+                    <h3 id="cartTotal" style="color: #ff6b9d;">$0</h3>
+                </div>
+                <button class="add-to-cart" id="checkoutBtn" onclick="proceedToCheckout()" style="display: none;">
+                    💳 Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("HfQlCMGfHSdMwXufZ");
+    </script>
+
+    <script src="scripts.js"></script>
+
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">×</span>
+                <h2 class="modal-title">💳 Payment Methods</h2>
+                <p>Select your preferred payment method</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="payment-methods">
+                    <!-- PayPal.Me -->
+                    <div class="payment-option" onclick="selectPaymentMethod('paypalme')">
+                        <img src="images/pngwing.com.png" alt="PayPal.Me">
+                        <span>PayPal.Me</span>
+                    </div>
+                </div>
+
+                <!-- PayPal.Me Info -->
+                <div id="paypalme-info" style="display:none;">
+                    <p>Click to pay with PayPal.me:</p>
+                    <a id="paypalme-link" href="https://paypal.me/paycakesmellisacakes" target="_blank"
+                        style="display:inline-block; padding:10px 16px; border-radius:6px; background:#0070ba; color:#fff; text-decoration:none;">
+                        Pay with PayPal.me
+                    </a>
+                    <p id="paypalme-warning" style="font-size:0.9rem; color:#666; margin-top:8px;"></p>
+                </div>
+
+
+
+                <!-- Complete Order Button -->
+                <button class="add-to-cart" onclick="completeOrder()" style="margin-top: 2rem; display: none;"
+                    id="completeOrderBtn">
+                    ✅ Complete Order
+                </button>
+
+                <!-- PayPal Button Container -->
+                <div id="paypal-button-container" style="display: none; margin-top: 2rem;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hidden-form" style="display:none;" aria-hidden="true">
+        <form id="orderForm" name="order" action="https://formspree.io/f/mwpqwjaa" method="POST"
+            enctype="multipart/form-data" data-netlify="false" netlify-honeypot="bot-field">
+            <!-- Campo señuelo para Netlify -->
+            <p class="hidden" style="display: none;">
+                <label>No llenar esto: <input name="bot-field"></label>
+            </p>
+
+            <input type="hidden" name="order" id="pedidoInput">
+            <input type="hidden" name="Order Details" id="orderDetailsInput">
+            <input type="hidden" name="⚠ Notice">
+
+            <input type="file" name="reference_image_1"><input type="file" name="reference_image_2"><input type="file"
+                name="reference_image_3"><input type="file" name="reference_image_4"><input type="file"
+                name="reference_image_5"><input type="file" name="reference_image_6"><input type="file"
+                name="reference_image_7"><input type="file" name="reference_image_8"><input type="file"
+                name="reference_image_9"><input type="file" name="reference_image_10">
+            <input type="text" name="image_url_1"><input type="text" name="image_url_2"><input type="text"
+                name="image_url_3"><input type="text" name="image_url_4"><input type="text" name="image_url_5"><input
+                type="text" name="image_url_6"><input type="text" name="image_url_7"><input type="text"
+                name="image_url_8"><input type="text" name="image_url_9"><input type="text" name="image_url_10">
+            <input type="text" name="reference_image_note_1"><input type="text" name="reference_image_note_2"><input
+                type="text" name="reference_image_note_3"><input type="text" name="reference_image_note_4"><input
+                type="text" name="reference_image_note_5"><input type="text" name="reference_image_note_6"><input
+                type="text" name="reference_image_note_7"><input type="text" name="reference_image_note_8"><input
+                type="text" name="reference_image_note_9"><input type="text" name="reference_image_note_10">
+
+            <input type="text" name="customerName"><input type="tel" name="customerPhone"><input type="date"
+                name="deliveryDate"><textarea name="description"></textarea>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
