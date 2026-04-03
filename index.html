@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Perfumes</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo 1 nuevo.png" alt="Logo Sensaciones">
+      <span>SENSACIONES</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#hombres">Hombres</a></li>
+      <li><a href="#mujeres">Mujeres</a></li>
+      <li><a href="#arabes">Árabes</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-logo">
+      <img src="img/logo 1 nuevo.png" alt="Logo Sensaciones">
+    </div>
+    <h1>Perfumes de la mejor calidad</h1>
+    <p>Descubre fragancias exclusivas para todos los gustos</p>
+    <a href="#productos" class="btn">Ver Catálogo</a>
+  </section>
+
+  <header>
+    <select id="filtro">
+      <option value="todos">Todos</option>
+      <option value="hombres">Hombres</option>
+      <option value="mujeres">Mujeres</option>
+      <option value="arabes">arabes</option>
+    </select>
+  </header>
+
+  <main id="productos" class="grid"></main>
+
+  <footer>
+    <p>&copy; 2025 Mi Perfumería. Todos los derechos reservados.</p>
+  </footer>
+<script src="script.js"></script>
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <p id="modal-caption"></p>
+    </div>
+  </div> 
+</body>
+</html>
