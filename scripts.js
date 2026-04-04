@@ -416,7 +416,6 @@ function selectPaymentMethod(method) {
             `;
             document.getElementById('paypalme-info').appendChild(confirmBox);
 
-            // Habilitar botón cuando marquen el checkbox
             document.getElementById('paypalme-confirm').addEventListener('change', function () {
                 completeBtn.disabled = !this.checked;
             });
@@ -1128,7 +1127,6 @@ ${item.phone ? `• Contact Phone: ${item.phone}` : ''}
             totalAmount: total
         });
 
-        // 5. Enviar a Formspree
         const response = await fetch(endpoint, {
             method: 'POST',
             body: fd,
